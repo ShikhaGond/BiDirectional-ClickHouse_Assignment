@@ -1,0 +1,32 @@
+{
+    "name": "clickhouse-data-ingestion-app",
+    "version": "1.0.0",
+    "description": "Web application for bidirectional data transfer between ClickHouse and Flat Files",
+    "main": "index.js",
+    "scripts": {
+      "start:backend": "python app.py",
+      "start:frontend": "react-scripts start",
+      "build": "react-scripts build",
+      "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "5.0.1"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.0"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
